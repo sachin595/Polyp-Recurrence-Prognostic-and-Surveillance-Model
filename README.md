@@ -12,7 +12,7 @@ Multimodal AI Framework for Predicting Polyp Recurrence and Tailored Surveillanc
 
 ## **Table of Contents**
 1. [Abstract](#abstract)
-2. [Project Objective](#project-objective)
+2. [Project Objectives](#project-objectives)
 3. [Dataset Description](#dataset-description)
 4. [Dataset Preprocessing](#dataset-preprocessing)
 5. [Implementation Approach](#implementation-approach)
@@ -33,7 +33,7 @@ This project focuses on developing an **AI-Enhanced Prognostic Model** for predi
 
 ---
 
-## **Project Objective**
+## **Project Objectives**
 The primary objective of this project is to develop a **Multimodal AI Model** for predicting the recurrence of polyps after polypectomy and recommending tailored surveillance intervals. This AI system, utilizing the **ERCPMP-v5 dataset**, aims to assist clinicians in:
 
 - **Early Detection of Recurrence or New Polyps**: By analyzing patient metadata and imaging data, the model helps identify patients at high risk of recurrence.
