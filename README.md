@@ -11,18 +11,36 @@ Multimodal AI Framework for Predicting Polyp Recurrence and Tailored Surveillanc
 ---
 
 ## **Table of Contents**
-1. [Dataset Description](#dataset-description)
-2. [Dataset Preprocessing](#dataset-preprocessing)
-3. [Workflow Diagram](#workflow-diagram)
-4. [Implementation Approach](#implementation-approach)
+1. [Abstract](#abstract)
+2. [Project Objective](#project-objective)
+3. [Dataset Description](#dataset-description)
+4. [Dataset Preprocessing](#dataset-preprocessing)
+5. [Implementation Approach](#implementation-approach)
    - [Multimodal AI Framework](#multimodal-ai-framework)
    - [Fusion Model](#fusion-model)
-5. [Project Objective](#project-objective)
-6. [Model Outputs](#model-outputs)
-7. [Analysis of Metrics](#analysis-of-metrics)
-8. [Key Observations](#key-observations)
-9. [Conclusion](#conclusion)
-10. [License](#license)
+6. [Workflow Diagram](#workflow-diagram)
+7. [Model Outputs](#model-outputs)
+8. [Analysis of Metrics](#analysis-of-metrics)
+9. [Key Observations](#key-observations)
+10. [Conclusion](#conclusion)
+11. [License](#license)
+---
+
+## **Abstract**
+Colorectal cancer (CRC) remains one of the leading causes of cancer-related morbidity and mortality worldwide, with adenomatous polyps serving as a key precursor lesion. Timely detection and removal of polyps during colonoscopy significantly reduce the risk of CRC; however, recurrence of polyps is common, necessitating vigilant post-polypectomy surveillance. Advances in machine learning and data integration offer opportunities to improve post-polypectomy surveillance and reduce associated morbidity.
+
+This project focuses on developing an **AI-Enhanced Prognostic Model** for predicting the recurrence of polyps after polypectomy using the **ERCPMP-v5 dataset**, which includes patient metadata, polyp characteristics, and imaging data. The model is designed to help clinicians with early detection of recurrence, efficient allocation of surveillance resources, and improved patient outcomes. By leveraging **multimodal data**, the system provides accurate predictions and surveillance recommendations.
+
+---
+
+## **Project Objective**
+The primary objective of this project is to develop a **Multimodal AI Model** for predicting the recurrence of polyps after polypectomy and recommending tailored surveillance intervals. This AI system, utilizing the **ERCPMP-v5 dataset**, aims to assist clinicians in:
+
+- **Early Detection of Recurrence or New Polyps**: By analyzing patient metadata and imaging data, the model helps identify patients at high risk of recurrence.
+- **Optimal Allocation of Surveillance Resources**: The AI system prioritizes patients based on risk, ensuring more efficient allocation of healthcare resources.
+- **Improved Patient Outcomes**: Through timely interventions and follow-ups, the model aims to improve long-term health outcomes and reduce the risks associated with CRC.
+
+The system aims to provide actionable insights for clinicians to optimize surveillance strategies and improve patient care.
 
 ---
 
@@ -55,10 +73,6 @@ Prepared by experts in Gastroenterology, Hematology, Oncology, and Artificial In
 - Image Paths: Linking images/frames to patient metadata.
 - Split Information: Indicates whether an entry belongs to training, validation, or test sets.
 
-
-## **Workflow Diagram**
-![Workflow Diagram](workflow.png)
-
 ---
 
 ## **Implementation Approach**
@@ -79,28 +93,24 @@ A Fusion Model is a deep learning approach that combines information from multip
 Why Use a Fusion Model?
 Multimodal Learning: A fusion model integrates multiple or diverse data types, combining metadata for contextual information (e.g., patient history) with images that capture detailed visual characteristics of polyps. In simple terms, a Fusion Model is like combining two experts—one analyzing patient details and the other examining polyp images—to make the best possible prediction about recurrence risk and follow-up care.
 
-
 ---
 
-## **Project Objective**
-Develop an AI model to:
-- Predict polyp recurrence post-polypectomy.
-- Recommend tailored surveillance intervals.
-- Assist clinicians in optimizing patient outcomes and resource allocation.
+## **Workflow Diagram**
+![Workflow Diagram](workflow.png)
 
 ---
-
 ## **Model Outputs**
 ### **Primary Outputs**
-1. **Binary Prediction**: Likely to recur or not likely to recur.
-2. **Confidence Score**: Probability indicating prediction certainty.
+1. **Binary Prediction**: Whether a polyp is likely to recur or not likely to recur .
+2. **Confidence Score**: A probability score (ranging from 0 to 1) indicating how certain the model is about the binary prediction.
+- Example: A prediction of "Likely to Recur" with a confidence score of 0.85 (85%).
 
 ### **Secondary Outputs**
-1. **Risk Categories**:
+1. **Risk Categories**: Based on the confidence score, the model stratifies the patient into one of the following risk categories:
    - Low Risk: Probability < 30%.
    - Moderate Risk: Probability 30–70%.
    - High Risk: Probability > 70%.
-2. **Tailored Surveillance Recommendations**:
+2. **Tailored Surveillance Recommendations**: For each patient, the model suggests an optimal follow-up interval based on the risk category:
    - Low Risk: Follow-up in 1–3 years.
    - Moderate Risk: Follow-up in 6–12 months.
    - High Risk: Follow-up in 3–6 months.
@@ -116,28 +126,25 @@ Develop an AI model to:
 ## **Key Observations**
 ### **Violin Plot Analysis**
 1. **Larger Polyp Sizes and Recurrence**:
-   - Yes Recurrence shows higher median size and variability.
+   - Polyps with Recurrence show a higher median size and greater variability, indicating size may be a risk factor for recurrence.
 2. **Non-Recurrent Polyps**:
-   - Smaller sizes with tightly packed distributions.
+   - Not Recurrence polyps are smaller and have a tightly packed size distribution.
 3. **Distinct Categories**:
-   - Clear separation between No and Yes categories.
+   - The clear separation between No and Yes categories suggests Size_cm is a strong feature for predicting recurrence risk.
 4. **Outliers**:
-   - Larger polyps (>5 cm) in Yes Recurrence group.
-
+   - Larger-sized polyps (>5 cm) are seen in the Yes Recurrence group, indicating potential extreme cases.
 ![Violin Plot](violin_plot.png)
 
 ---
 
 ## **Conclusion**
-The AI-Enhanced Prognostic Model leverages multimodal data for actionable post-polypectomy care. By reducing unnecessary procedures and facilitating early detection, the model improves patient outcomes while optimizing healthcare resources.
+The AI-Enhanced Prognostic Model leverages multimodal data to provide actionable insights for post-polypectomy care. By delivering tailored surveillance recommendations, the model reduces unnecessary procedures and ensures early detection of recurrent polyps in high-risk patients. Additionally, it facilitates effective resource allocation by identifying low-risk patients, enabling more frequent monitoring for high-risk cases. Ultimately, this personalized approach enhances post-polypectomy outcomes, minimizing the risk of missed or delayed detection and improving overall patient care.
 
 ---
 
 ## **License**
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This project is licensed under the Attribution 4.0 International (CC BY 4.0). For more details, visit the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/).
+The dataset used in this project is licensed under the Attribution 4.0 International (CC BY 4.0). For more details, visit the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/).
 
 ---
-
-Let me know if you need further refinements or additional sections.
