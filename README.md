@@ -1,12 +1,12 @@
 # Polyp-Recurrence-Prognostic-and-Surveillance-Model
 Multimodal AI Framework for Predicting Polyp Recurrence and Tailored Surveillance Recommendations
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 ![Research Medical AI](https://img.shields.io/badge/Research-Medical%20AI-green.svg)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![Dataset: ERCPMP-v5](https://img.shields.io/badge/Dataset-ERCPMP--v5-blue.svg)](https://data.mendeley.com/datasets/7grhw5tv7n/6/files/72cc0287-84ad-4ade-ae74-8e1e8b30c0a4)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)
 ![TensorFlow](https://img.shields.io/badge/Framework-TensorFlow-orange.svg)
 ![PyTorch](https://img.shields.io/badge/Framework-PyTorch-red.svg)
-[![Dataset: ERCPMP-v5](https://img.shields.io/badge/Dataset-ERCPMP--v5-brightgreen.svg)](https://data.mendeley.com/datasets/7grhw5tv7n/6/files/72cc0287-84ad-4ade-ae74-8e1e8b30c0a4)
 
 ---
 
