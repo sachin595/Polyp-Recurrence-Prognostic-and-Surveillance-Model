@@ -77,6 +77,10 @@ Prepared by experts in Gastroenterology, Hematology, Oncology, and Artificial In
 - Split Information: Indicates whether an entry belongs to training, validation, or test sets.
 
 ---
+## **Dataset Workflow**
+![Dataset Workflow](dataset_workflow.png)
+
+---
 
 ## **Implementation Approach**
 ### **Multimodal AI Framework**
