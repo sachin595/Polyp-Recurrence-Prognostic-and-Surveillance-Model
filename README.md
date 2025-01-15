@@ -53,6 +53,9 @@ The ERCPMP-v5 dataset contains detailed endoscopic images, videos, and patient d
 - **Morphological Data**: Classifications based on Paris, Pit, and JNET Classification systems.
 - **Pathological Data**: Includes diagnoses like Tubular, Villous, Tubulovillous, Hyperplastic, and more.
 
+  ### **Dataset Link**
+[Access the ERCPMP-v5 dataset here](https://data.mendeley.com/datasets/7grhw5tv7n/6/files/72cc0287-84ad-4ade-ae74-8e1e8b30c0a4)
+
 ### Contributors
 Prepared by experts in Gastroenterology, Hematology, Oncology, and Artificial Intelligence.
 
