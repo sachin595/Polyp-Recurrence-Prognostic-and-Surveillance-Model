@@ -1,4 +1,4 @@
-# Polyp-Recurrence-Prognostic-and-Surveillance-Model
+# Polyp Recurrence Prognostic and Surveillance Model
 Multimodal AI Framework for Predicting Polyp Recurrence and Tailored Surveillance Recommendations
 
 ![Research Medical AI](https://img.shields.io/badge/Research-Medical%20AI-green.svg)
